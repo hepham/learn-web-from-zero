@@ -1,0 +1,91 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.plant-detail {
+  width: 80rem;
+  min-height: 60rem;
+  background-color: #aedba5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+.plant-detail-container {
+  background-color: #fff;
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.06);
+}
+.plant-detail-header {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #eee;
+}
+.plant-detail-back {
+  color: #999;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+.plant-detail-back span {
+  margin-left: 1.5rem;
+}
+.plant-detail-like {
+  font-size: 2rem;
+  color: #999;
+}
+.plant-detail-content {
+  display: flex;
+}
+.plant-detail-content > div {
+  padding: 4rem;
+}
+.plant-detail-image {
+  width: 40%;
+}
+.plant-image {
+  width: 100%;
+}
+.plant-detail-infor {
+  width: 60%;
+  border-left: 1px solid #eee;
+}
+.plant-detail-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+.plant-detail-category {
+  text-transform: uppercase;
+  color: #999;
+  display: block;
+  margin-bottom: 2rem;
+}
+.plant-detail-price {
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+.plant-detail-description {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #999;
+}
+.plant-detail-button {
+  outline: none;
+  cursor: pointer;
+  color: #999;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  width: 15rem;
+  font-size: 1.4rem;
+}
+
+.plant-detail-button:first-of-type {
+  margin-right: 1rem;
+}
