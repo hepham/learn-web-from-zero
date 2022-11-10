@@ -1,0 +1,43 @@
+.button {
+  display: inline-block;
+  font-size: 16px;
+  color: $gray-dark;
+  padding: 20px 45px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  &-primary {
+    color: white;
+    background-color: $primary-color;
+  }
+  &-outline {
+    border: 1px solid $gray-blur;
+  }
+}
+.header {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  &-logo {
+    display: block;
+    margin-right: 120px;
+  }
+  &-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  &-menu-item:not(:first-child) {
+    margin-left: 75px;
+  }
+  &-menu-link {
+    color: $gray-dark;
+    &:hover {
+      color: $primary-color;
+      transition: color 0.2s ease-in-out;
+    }
+  }
+  &-auth {
+    margin-left: auto;
+  }
+}
