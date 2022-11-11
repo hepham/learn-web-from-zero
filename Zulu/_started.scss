@@ -11,6 +11,10 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  *:not(img) {
+    position: relative;
+    z-index: 100;
+  }
   &-heading {
     margin-bottom: 30px;
   }
@@ -29,5 +33,13 @@
     right: 0;
     top: 0;
     transform: translate(50%, -30%);
+  }
+  @media screen and (max-width: 767.98px) {
+    &-smile {
+      max-width: 20%;
+    }
+    &-comment {
+      max-width: 20%;
+    }
   }
 }

@@ -29,4 +29,39 @@
       padding-right: 20px;
     }
   }
+  @media screen and (max-width: 1279.98px) {
+    &-heading {
+      font-size: 45px;
+    }
+    &-links {
+      .button {
+        padding: 15px 20px;
+      }
+      .button:first-child {
+        margin-right: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+    &-desc {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (max-width: 1023.98px) {
+    flex-direction: column;
+    & > * {
+      width: 100%;
+    }
+    &-image {
+      transform: none;
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    &-heading {
+      font-size: 42px;
+      span {
+        display: unset;
+      }
+    }
+  }
 }

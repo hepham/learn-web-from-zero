@@ -12,4 +12,26 @@
     margin-bottom: 30px;
     margin-top: 40px;
   }
+  @media screen and (max-width: 1023.98px) {
+    &-content {
+      padding-right: 20px;
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    & {
+      padding: 25px 0 50px;
+      display: block;
+    }
+    & > * {
+      width: 100%;
+    }
+    &-content {
+      margin-bottom: 35px;
+    }
+    &-heading {
+      span {
+        display: unset;
+      }
+    }
+  }
 }

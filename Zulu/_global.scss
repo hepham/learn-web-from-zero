@@ -33,6 +33,7 @@ body {
   margin: 0 auto;
 }
 .block {
+  margin-top: 30px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -92,4 +93,38 @@ body {
 }
 .logo {
   display: inline-block;
+}
+// section,
+// footer {
+//   display: none !important;
+// }
+.button {
+  display: inline-block;
+  font-size: 16px;
+  color: $gray-dark;
+  padding: 20px 45px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  &-primary {
+    color: white;
+    background-color: $primary-color;
+  }
+  &-outline {
+    border: 1px solid $gray-blur;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .button {
+    padding: 10px 20px;
+  }
+  .block {
+    margin-bottom: 20px;
+    &-heading {
+      font-size: 35px;
+    }
+    &-caption {
+      margin-bottom: 20px;
+    }
+  }
 }

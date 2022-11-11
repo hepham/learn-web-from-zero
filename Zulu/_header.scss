@@ -1,43 +1,98 @@
-.button {
-  display: inline-block;
-  font-size: 16px;
-  color: $gray-dark;
-  padding: 20px 45px;
-  border-radius: 10px;
-  outline: none;
-  cursor: pointer;
-  &-primary {
-    color: white;
-    background-color: $primary-color;
-  }
-  &-outline {
-    border: 1px solid $gray-blur;
-  }
-}
 .header {
   padding-top: 40px;
   display: flex;
   align-items: center;
+
   &-logo {
     display: block;
     margin-right: 120px;
   }
+
   &-menu {
     display: flex;
     align-items: center;
     list-style: none;
   }
-  &-menu-item:not(:first-child) {
-    margin-left: 75px;
-  }
+
   &-menu-link {
     color: $gray-dark;
+
     &:hover {
       color: $primary-color;
       transition: color 0.2s ease-in-out;
     }
   }
+
   &-auth {
     margin-left: auto;
+  }
+
+  @media screen and (min-width: 1024px) {
+    &-menu-item:not(:first-child) {
+      margin-left: 75px;
+    }
+    &-menu-toggle {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1279px) {
+    &-logo {
+      margin-right: 0px;
+    }
+
+    &-menu {
+      margin: 0 auto;
+    }
+
+    &-auth {
+      margin-left: 0;
+    }
+  }
+
+  @media screen and (max-width: 1023.98px) {
+    &-menu {
+      display: block;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 60%;
+      max-width: 300px;
+      background-color: white;
+      z-index: 999;
+      bottom: 0;
+      border-left: 1px solid $gray;
+      padding: 50px 15px;
+      transition: transform 0.25s linear;
+      transform: translateX(100%);
+    }
+    &-menu.is-active {
+      transform: translateX(0);
+    }
+    &-auth {
+      margin-left: auto;
+    }
+    &-menu-toggle {
+      display: inline-block;
+      font-size: 20px;
+      margin-left: 20px;
+    }
+    &-menu-link {
+      display: block;
+      padding: 20px;
+      border-radius: 10px;
+      &:hover {
+        color: white;
+        background-color: $gray-dark;
+      }
+    }
+
+    &-logo-image {
+      max-width: 100px;
+    }
+
+    & {
+      padding-top: 20px;
+    }
   }
 }
